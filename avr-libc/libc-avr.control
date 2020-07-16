@@ -1,0 +1,11 @@
+Package: libc-avr
+Version: 2.0.0-1
+Section: devel
+Architecture: amd64
+Maintainer: Alex V. Zolotov <zolotov-alex@shamangrad.net>
+Priority: optional
+Requires: binutils-avr, gcc-avr
+Description: AVR Libc
+ AVR Libc is a Free Software project whose goal is to provide a high
+ quality C library for use with GCC on Atmel AVR microcontrollers.
+Homepage: https://www.nongnu.org/avr-libc/
