@@ -1,0 +1,12 @@
+Package: binutils-avr
+Version: 2.34-1
+Section: devel
+Architecture: amd64
+Maintainer: Alex V. Zolotov <zolotov-alex@shamangrad.net>
+Priority: optional
+Requires: libc6, zlib
+Description: GNU assembler, linker and binary utilities
+ The programs in this package are used to assemble, link and manipulate
+ binary and object files.  They may be used in conjunction with a compiler
+ and various libraries to build programs.
+Homepage: https://www.gnu.org/software/binutils/
