@@ -1,8 +1,8 @@
 
-.PHONY: avr
-avr:
-	./libc-avr.sh
-	
+.PHONY: avr-libc
+avr-libc:
+	./avr-libc.sh
+
 .PHONY: clean
 clean:
 	rm -rf *.deb

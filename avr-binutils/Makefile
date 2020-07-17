@@ -1,7 +1,7 @@
 
-.PHONY: avr
-avr:
-	./binutils-avr.sh
+.PHONY: avr-binutils
+avr-binutils:
+	./avr-binutils.sh
 
 .PHONY: clean
 clean:

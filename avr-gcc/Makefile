@@ -1,8 +1,8 @@
 
-.PHONY: avr
-avr:
-	./gcc-avr.sh
-	
+.PHONY: avr-gcc
+avr-gcc:
+	./avr-gcc.sh
+
 .PHONY: clean
 clean:
 	rm -rf *.deb

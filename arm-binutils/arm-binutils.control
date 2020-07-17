@@ -1,10 +1,11 @@
-Package: binutils-avr
-Version: 2.33.1-1
+Package: arm-binutils
+Version: 2.33.1
 Section: devel
 Architecture: amd64
 Maintainer: Alex V. Zolotov <zolotov-alex@shamangrad.net>
 Priority: optional
 Requires: libc6, zlib
+Conflicts: binutils-arm-none-eabi
 Description: GNU assembler, linker and binary utilities
  The programs in this package are used to assemble, link and manipulate
  binary and object files.  They may be used in conjunction with a compiler

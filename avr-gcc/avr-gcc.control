@@ -1,10 +1,11 @@
-Package: gcc-avr
-Version: 10.1.0-1
+Package: avr-gcc
+Version: 10.1.0
 Section: devel
 Architecture: amd64
 Maintainer: Alex V. Zolotov <zolotov-alex@shamangrad.net>
 Priority: optional
-Requires: libc6, zlib, binutils-avr
+Requires: libc6, zlib, avr-binutils
+Conflicts: gcc-avr
 Description: GNU C compiler (cross compiler for avr)
  This is the GNU C compiler, a fairly portable optimizing compiler which
  supports multiple languages.  This package includes support for C.

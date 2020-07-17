@@ -1,7 +1,7 @@
 
 .PHONY: arm
 arm:
-	./binutils-arm.sh
+	./arm-binutils.sh
 
 .PHONY: clean
 clean:

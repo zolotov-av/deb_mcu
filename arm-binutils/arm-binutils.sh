@@ -7,7 +7,7 @@ set -e
 set -x
 
 TEMP=$PACKAGES/temp
-DEST=$PACKAGES/binutils-arm
+DEST=$PACKAGES/arm-binutils
 BUILD=$BASEDIR/build
 
 rm -rf $TEMP $DEST $BUILD
@@ -25,6 +25,6 @@ rm -rf $DEST/$HOST_LIBDIR/*.la
 rm -rf $DEST/usr/share/info
 
 mkdir -pv $DEST/DEBIAN
-cp -v $BASEDIR/binutils-arm.control $DEST/DEBIAN/control
+cp -v $BASEDIR/arm-binutils.control $DEST/DEBIAN/control
 cd $PACKAGES
 fakeroot dpkg-deb --build $DEST $BASEDIR

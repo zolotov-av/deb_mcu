@@ -22,6 +22,6 @@ make DESTDIR=$DEST install
 #rm -rf $DEST/usr/share/info
 
 mkdir -pv $DEST/DEBIAN
-cp -v $BASEDIR/libc-avr.control $DEST/DEBIAN/control
+cp -v $BASEDIR/avr-libc.control $DEST/DEBIAN/control
 cd $PACKAGES
 fakeroot dpkg-deb --build $DEST $BASEDIR
