@@ -1,5 +1,5 @@
 Package: binutils-avr
-Version: 2.34-1
+Version: 2.33.1-1
 Section: devel
 Architecture: amd64
 Maintainer: Alex V. Zolotov <zolotov-alex@shamangrad.net>

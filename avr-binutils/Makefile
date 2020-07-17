@@ -2,7 +2,7 @@
 .PHONY: avr
 avr:
 	./binutils-avr.sh
-	
+
 .PHONY: clean
 clean:
 	rm -rf *.deb
