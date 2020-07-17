@@ -4,6 +4,8 @@ HOST_ARCH=x86_64-pc-linux-gnu
 TARGET_ARCH=aarch64-unknown-linux-gnu
 PARALLEL=-j4
 
+ARM_ARCH=arm-none-eabi
+
 HOST_ML=x86_64-linux-gnu
 TARGET_ML=aarch64-linux-gnu
 HOST_LIBDIR=/usr/lib/$HOST_ML
