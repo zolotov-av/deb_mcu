@@ -27,6 +27,6 @@ rm -rf $DEST/usr/share/info
 rm -rf $DEST/usr/share/man/man7
 
 mkdir -pv $DEST/DEBIAN
-cp -v $BASEDIR/arm-gcc.control $DEST/DEBIAN/control
+cp -v $BASEDIR/arm-gcc-bootstrap.control $DEST/DEBIAN/control
 cd $PACKAGES
 fakeroot dpkg-deb --build $DEST $BASEDIR

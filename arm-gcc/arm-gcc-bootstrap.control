@@ -4,7 +4,7 @@ Section: devel
 Architecture: amd64
 Maintainer: Alex V. Zolotov <zolotov-alex@shamangrad.net>
 Priority: optional
-Requires: libc6, zlib, arm-binutils, arm-newlib
+Requires: libc6, zlib, arm-binutils
 Conflicts: gcc-arm-none-eabi
 Description: GNU C compiler (cross compiler for avr)
  This is the GNU C compiler, a fairly portable optimizing compiler which

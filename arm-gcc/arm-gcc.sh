@@ -15,14 +15,17 @@ mkdir -pv $TEMP $DEST $BUILD
 
 cd $BUILD
 $SRC/gcc-$VERSION/configure --prefix=/usr --libdir=$HOST_LIBDIR --build=$HOST_ARCH --host=$HOST_ARCH --target=$ARM_ARCH --enable-multilib --enable-shared --enable-languages=c,c++ --disable-nls --disable-libssp --with-dwarf2 --without-headers --with-newlib
-make $PARALLEL all-gcc
-make DESTDIR=$TEMP install-gcc
+make $PARALLEL
+make DESTDIR=$TEMP install-strip
+
+rm -rf $DEST
+mkdir $DEST
 
 rsync -a $TEMP/ $DEST/
 
 # cleanup
-#rm -rf $DEST/usr/lib/lib/libcc1.*
-#rmdir $DEST/usr/lib/lib
+rm -rf $DEST/usr/lib/lib/libcc1.*
+rmdir $DEST/usr/lib/lib
 rm -rf $DEST/usr/share/info
 rm -rf $DEST/usr/share/man/man7
 
