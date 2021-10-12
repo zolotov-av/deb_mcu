@@ -10,11 +10,11 @@ TEMP=$PACKAGES/temp
 DEST=$PACKAGES/avr-gcc
 BUILD=$BASEDIR/build
 
-rm -rf $DEST $BUILD
-mkdir -pv $DEST $BUILD
+#rm -rf $DEST $BUILD
+#mkdir -pv $DEST $BUILD
 
 cd $BUILD
-$SRC/gcc-$VERSION/configure --prefix=/usr --libdir=$HOST_LIBDIR --build=$HOST_ARCH --host=$HOST_ARCH --target=avr --enable-multilib --enable-shared --disable-static --disable-nls --enable-languages=c,c++ --disable-libssp --with-dwarf2
+$SRC/gcc-$VERSION/configure --prefix=/usr --libdir=$HOST_LIBDIR --build=$HOST_ARCH --host=$HOST_ARCH --target=avr --enable-multilib --disable-shared --disable-nls --enable-languages=c,c++ --disable-libssp --with-dwarf2
 make $PARALLEL
 make DESTDIR=$TEMP install-strip
 

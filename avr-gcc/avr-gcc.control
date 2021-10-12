@@ -1,5 +1,5 @@
 Package: avr-gcc
-Version: 10.1.0
+Version: 11.2.0
 Section: devel
 Architecture: amd64
 Maintainer: Alex V. Zolotov <zolotov-alex@shamangrad.net>
