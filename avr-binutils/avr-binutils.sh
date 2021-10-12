@@ -14,7 +14,7 @@ rm -rf $TEMP $DEST $BUILD
 mkdir -pv $TEMP $DEST $BUILD
 
 cd $BUILD
-$SRC/binutils-$VERSION/configure --prefix=/usr --libdir=$HOST_LIBDIR --build=$HOST_ARCH --host=$HOST_ARCH --target=avr --enable-multilib --enable-shared --disable-static --disable-nls
+$SRC/binutils-$VERSION/configure --prefix=/usr --libdir=$HOST_LIBDIR --build=$HOST_ARCH --host=$HOST_ARCH --target=avr --enable-multilib --disable-shared --disable-nls
 make $PARALLEL
 make DESTDIR=$TEMP install-strip
 
