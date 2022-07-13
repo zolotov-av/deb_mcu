@@ -23,6 +23,10 @@ rsync -a $TEMP/ $DEST/
 # cleanup
 rm -rf $DEST/$TARGET_LIBDIR/*.la
 rm -rf $DEST/usr/share/info
+rm -rf $DEST/$HOST_LIBDIR/bfd-plugins/libdep.a
+rmdir $DEST/$HOST_LIBDIR/bfd-plugins
+rmdir $DEST/$HOST_LIBDIR/
+rmdir $DEST/usr/lib
 
 mkdir -pv $DEST/DEBIAN
 cp -v $BASEDIR/avr-binutils.control $DEST/DEBIAN/control
